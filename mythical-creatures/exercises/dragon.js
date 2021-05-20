@@ -4,8 +4,6 @@ class Dragon {
     this.rider = rider;
     this.hungryCount = 0;
     this.hungry = true;
-
-
   }
 
   greet() {
@@ -19,6 +17,5 @@ class Dragon {
     }
   }
 }
-
 
 module.exports = Dragon;
