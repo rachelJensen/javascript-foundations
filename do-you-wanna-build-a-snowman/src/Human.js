@@ -11,6 +11,7 @@ class Human {
     };
     this.wantsToBuildASnowman = true;
   }
+
   gatherMaterials(material, amount) {
     this.materials[material] += amount;
   }
@@ -19,7 +20,7 @@ class Human {
     var snowman = new Snowman(this.materials);
     return snowman;
   }
-
+ 
   placeMagicHat() {
     var snowman = this.buildASnowman();
     snowman.canWearMagicHat();
