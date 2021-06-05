@@ -103,6 +103,7 @@ describe('Golfer', function () {
     var golfCourse1 = new GolfCourse('Bear Dance', 'hard', 44, ['elevation', 'views']);
     var golfCourse2 = new GolfCourse('Willis Case', 'moderate', 31, ['proximity to Denver', 'layout']);
 
+    // invoke a method on a golfer which takes a Golf course object as it's argument
     golfer1.playRound(golfCourse1);
     assert.equal(golfer1.frustration, 500);
 
@@ -160,7 +161,7 @@ describe('Golfer', function () {
 
     var shot4 = golfer1.whatYaShoot(-2);
     assert.equal(golfer1.frustration, 0);
-    assert.equal(shot4, 'I AM THE GREATEST GOLFER ALIVE!');
+    assert.equal(shot4, '');
 
     var shot5 = golfer1.whatYaShoot(3);
     assert.equal(golfer1.frustration, 20);
